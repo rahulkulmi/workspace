@@ -9,7 +9,7 @@
 <body>
 <h1 align="center"> Registration page </h1>
 	<table border="1" align="center">		
-		<form action="webapi/user/register" method="post">		
+		<form action="webapi/user/register_2" method="post">		
 			<tr>
 				<td>Enter User Name</td>
 				<td><input type="text" name="userName" /></td>
