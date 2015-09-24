@@ -15,28 +15,16 @@ public class User {
 	UserService service = new UserService();
 
 	@POST
-	@Path("/register_1")
+	@Path("/register")
 	@Produces(MediaType.APPLICATION_XML)
-	public UserBean addUser_1(@FormParam("userName") String userName, @FormParam("address") String address, 
+	public UserBean addUser(@FormParam("userName") String userName, @FormParam("address") String address, 
 			@FormParam("mobileNo") int mobile){
 		UserBean bean = new UserBean();
 		bean.setName(userName);
 		bean.setAddress(address);
 		bean.setMobile(mobile);
-		bean = service.registerUser_1(bean);
-		return bean;		
-	}
-	
-	@POST
-	@Path("/register_2")
-	@Produces(MediaType.APPLICATION_XML)
-	public UserBean addUser_2(@FormParam("userName") String userName, @FormParam("address") String address, 
-			@FormParam("mobileNo") int mobile){
-		UserBean bean = new UserBean();
-		bean.setName(userName);
-		bean.setAddress(address);
-		bean.setMobile(mobile);
-		bean = service.registerUser_2(bean);
-		return bean;		
+		bean = service.registerUser(bean);
+		return bean;
+		//System.out.println("New User Add Successfully : "+bean.getMaxId());
 	}
 }

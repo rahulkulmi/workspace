@@ -1,0 +1,9 @@
+com\app\newput\controller\group\TestingExample$Criteria.class
+com\app\newput\bean\TestingBean.class
+com\app\newput\controller\group\TestingExample.class
+com\app\newput\controller\group\TestingExample$Criterion.class
+com\app\newput\controller\IndexController.class
+com\app\newput\service\TestingService.class
+com\app\newput\controller\group\Testing.class
+com\app\newput\controller\group\TestingExample$GeneratedCriteria.class
+com\app\newput\mapper\group\TestingMapper.class
